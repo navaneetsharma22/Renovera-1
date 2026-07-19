@@ -201,7 +201,7 @@ export function Hero() {
         </div>
 
         {/* Floating Consultation Panel */}
-        <div ref={panelRef} className="absolute bottom-6 left-8 right-0 lg:left-1/2 lg:-translate-x-[46%] lg:w-full lg:max-w-5xl z-20">
+        <div ref={panelRef} className="absolute bottom-6 left-8 right-0 lg:left-1/2 lg:-translate-x-[42%] lg:w-full lg:max-w-5xl z-20">
           <FloatingConsultationPanel />
         </div>
 
