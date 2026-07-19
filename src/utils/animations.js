@@ -142,7 +142,7 @@ export const animateCinematicHero = (refs) => {
     // Initial Setup
     gsap.set(background, { scale: 1.05, opacity: 0 });
     gsap.set(content, { opacity: 0 });
-    gsap.set([badge, description, panel, floatingCard], { opacity: 0, y: 20 });
+    gsap.set([badge, description, panel, floatingCard].filter(Boolean), { opacity: 0, y: 20 });
     gsap.set(heading, { opacity: 0, y: 40, clipPath: "polygon(0 0, 100% 0, 100% 0, 0 0)" });
     gsap.set(buttons.children, { opacity: 0, y: 20 });
     gsap.set(statistics.children, { opacity: 0, y: 15 });
@@ -164,13 +164,10 @@ export const animateCinematicHero = (refs) => {
       opacity: 1,
       duration: 0.5,
     }, "-=0.5")
-    // 3. Badge Fade Up
-    .to(badge, {
-      opacity: 1,
-      y: 0,
-      duration: 0.6,
-      ease: "power3.out"
-    }, "-=0.2")
+    // 3. Badge Fade Up (if present)
+    .call(() => {
+      if (badge) gsap.to(badge, { opacity: 1, y: 0, duration: 0.6, ease: "power3.out" });
+    }, null, "-=0.2")
     // 4. Heading Reveal
     .to(heading, {
       opacity: 1,
@@ -227,7 +224,7 @@ export const animateCinematicHero = (refs) => {
   });
 
   mm.add("(prefers-reduced-motion: reduce)", () => {
-    const allEls = [background, content, badge, heading, description, floatingCard, panel, scrollIndicator, ...buttons.children, ...statistics.children];
+    const allEls = [background, content, badge, heading, description, floatingCard, panel, scrollIndicator, ...buttons.children, ...statistics.children].filter(Boolean);
     gsap.set(allEls, { clearProps: "all" });
     gsap.set(allEls, { opacity: 0 });
     gsap.to(allEls, { opacity: 1, duration: 0.5, stagger: 0.05 });

@@ -160,7 +160,7 @@ export function Hero() {
       >
         <div ref={contentRef} className="flex flex-col h-full justify-center pt-28 md:pt-[130px] pb-24 relative z-10 w-full lg:w-[45%]">
           <HeroContent
-            badge={<div ref={badgeRef} className="mb-8"><HeroBadge text="Premium Design & Build Studio" variant="primary" className="text-white" /></div>}
+            badge={null}
             title={<div ref={headingRef} className="mb-10"><HeroHeading title="Transforming Spaces. Elevating Living." highlight="Elevating Living." className="text-white" /></div>}
             description={<div ref={descriptionRef} className="mb-12"><HeroDescription description="We design and renovate exceptional homes through thoughtful architecture, premium craftsmanship, and personalized project management." maxWidth="max-w-[620px]" className="text-white/90" /></div>}
             buttons={
@@ -188,7 +188,7 @@ export function Hero() {
         </div>
         
         {/* Floating Statistics Card */}
-        <div ref={floatingCardRef} className="hidden lg:block absolute top-1/2 right-12 -translate-y-1/2 z-10 w-full max-w-[320px]">
+        <div ref={floatingCardRef} className="hidden lg:block absolute top-[38%] right-4 -translate-y-1/2 z-10 w-full max-w-[320px]">
           <FloatingInfoCard 
             title="Global Reach"
             className="rounded-xl shadow-sm border-border/50 p-8"
