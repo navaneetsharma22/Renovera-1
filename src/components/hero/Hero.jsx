@@ -188,7 +188,7 @@ export function Hero() {
         </div>
         
         {/* Floating Statistics Card */}
-        <div ref={floatingCardRef} className="hidden lg:block absolute top-[38%] right-4 -translate-y-1/2 z-10 w-full max-w-[320px]">
+        <div ref={floatingCardRef} className="hidden lg:block absolute top-[38%] -right-8 -translate-y-1/2 z-10 w-full max-w-[320px]">
           <FloatingInfoCard 
             title="Global Reach"
             className="rounded-xl shadow-sm border-border/50 p-8"
