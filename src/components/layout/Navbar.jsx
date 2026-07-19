@@ -58,7 +58,7 @@ export function Navbar() {
           : "h-[88px] bg-transparent border-transparent"
       )}
     >
-      <div className="container mx-auto px-6 md:px-12 lg:px-16 max-w-[1440px] flex items-center justify-between w-full h-full">
+      <div className="w-full px-6 md:px-12 lg:px-16 flex items-center justify-between h-full">
         {/* Logo */}
         <Link
           href="/"
