@@ -1,0 +1,15 @@
+export { getProjectBySlug, getAllProjectSlugs } from "./projectDetailsData";
+export { ProjectHero } from "./ProjectHero";
+export { ProjectOverview } from "./ProjectOverview";
+export { ClientVision } from "./ClientVision";
+export { ChallengesGrid } from "./ChallengesGrid";
+export { DesignSolution } from "./DesignSolution";
+export { ProcessTimeline } from "./ProcessTimeline";
+export { MaterialPalette } from "./MaterialPalette";
+export { ProjectGallery } from "./ProjectGallery";
+export { BeforeAfterSection } from "./BeforeAfterSection";
+export { ProjectTimeline } from "./ProjectTimeline";
+export { ConstructionHighlights } from "./ConstructionHighlights";
+export { ClientTestimonial } from "./ClientTestimonial";
+export { RelatedProjects } from "./RelatedProjects";
+export { ProjectCTA } from "./ProjectCTA";

@@ -1,0 +1,10 @@
+export { ProjectsHero } from "./ProjectsHero";
+export { PortfolioStats } from "./PortfolioStats";
+export { SearchAndFilters } from "./SearchAndFilters";
+export { FeaturedProject } from "./FeaturedProject";
+export { ProjectGrid } from "./ProjectGrid";
+export { ProjectCard } from "./ProjectCard";
+export { ProjectCategories } from "./ProjectCategories";
+export { ProjectLocations } from "./ProjectLocations";
+export { AwardsPublications } from "./AwardsPublications";
+export { ProjectsCTA } from "./ProjectsCTA";
